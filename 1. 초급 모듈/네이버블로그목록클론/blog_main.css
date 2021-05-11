@@ -1,0 +1,32 @@
+
+.name {
+    margin-left: 20px;
+    width : 70px; 
+    float : left;
+}
+
+.profile-photo {
+    margin-top: 20px;
+    width:38px; 
+    height : 42px; 
+    float : left; 
+}
+
+.text {
+    
+    width :40%;
+    float : left;
+}
+
+.photo {
+    margin-top : 110px;
+    width : 40%;
+    float : left; 
+}
+
+.title-main {
+    margin-top : 40px;
+    width : 500px;
+}
+
+
