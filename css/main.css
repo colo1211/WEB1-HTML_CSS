@@ -1,0 +1,14 @@
+
+.myname {
+    font-size: 30px; 
+    font-family: gulim; 
+    text-align: center;
+}
+
+.profile {
+    width:500px; 
+    display:block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
