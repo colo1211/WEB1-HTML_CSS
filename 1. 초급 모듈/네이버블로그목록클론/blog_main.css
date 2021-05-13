@@ -35,6 +35,29 @@
 
 .main-text {
     clear: both;
-    margin-top : 110px;
+    margin-top : 10px;
 }
 
+
+.li-inline li{
+    display: inline-block;
+    width : 50px;
+    text-align: center;
+}
+
+
+
+.navbar {
+    width:1000px;
+    margin : auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+.link : visited {
+    color:black;
+}
