@@ -24,9 +24,6 @@ div {
     color : white;
 }
 
-.main-title {
-    
-}
 
 .main-button {
     display : block;
@@ -43,7 +40,7 @@ body {
 .position {
     /* 원래 위치를 기준으로 좌표를 변경시켜주는 속성 position : relative */
     position : absolute; /* 쓰면, 좌표계를 설정 할 수 있다. */
-    bottom : 250px;
+    bottom : 100px;
     left : 0; 
     right : 0;
     margin : auto;
@@ -61,7 +58,6 @@ body {
     height : 30%;
     display : border;
     margin : auto;
-    box-sizing: border-box;
 }
 
 .gray-box-position {
