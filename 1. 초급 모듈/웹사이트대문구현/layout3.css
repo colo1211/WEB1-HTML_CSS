@@ -1,0 +1,87 @@
+div {
+    box-sizing: border-box;
+}
+.main-background {
+    width : 100%;
+    height: 500px;
+    background-image: url(shoes.jpg);
+    background-repeat: no-repeat;/*이미지 반복방지*/
+    background-size: cover; /* 웹 창 사이즈가 줄더라도 공백없이 이미지를 꽉 채워 */
+/*    background-size: contain;  공백이 있더라도 이미지를 절대 훼손하지 말것 */
+    background-position: center;
+/*    웹 창 사이즈를 줄이고 늘릴때 어디서 부터 이미지를 채울 것 인지*/
+    background-attachment: fixed;
+/*    사이트에 스크롤바 있으면 이미지를 고정 할 것*/
+    padding-top : 100px;
+    position: relative;
+}
+
+
+
+.main-box {
+
+    text-align: center;
+    color : white;
+}
+
+.main-title {
+    
+}
+
+.main-button {
+    display : block;
+    margin : auto; 
+    font-family: nanumsquare;
+    padding : 10px;
+    border: none;
+}
+
+body {
+    margin : 0px;
+}
+
+.position {
+    /* 원래 위치를 기준으로 좌표를 변경시켜주는 속성 position : relative */
+    position : absolute; /* 쓰면, 좌표계를 설정 할 수 있다. */
+    bottom : 250px;
+    left : 0; 
+    right : 0;
+    margin : auto;
+    width : 150px;
+}
+
+.main-text {
+    margin-top: 50px;
+}
+
+.gray-box {
+    background-color : #eee;
+    max-width: 600px;
+    width : 80%;
+    height : 30%;
+    display : border;
+    margin : auto;
+    box-sizing: border-box;
+}
+
+.gray-box-position {
+    text-align: center;
+    position : relative;
+    left : 0;
+    right : 0; 
+    margin : auto; 
+    bottom : 60px;
+}
+
+
+
+.gray-box-text {
+    padding-top : 10px;
+    
+}
+
+.gray-box-title {
+    margin-top : 40px;
+}
+
+
