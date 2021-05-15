@@ -1,0 +1,69 @@
+div {
+   box-sizing: border-box; 
+}
+
+.wrap {
+    width : 100%; 
+    background-color: pink;
+    padding : 200px;
+}
+
+.table-wrap {
+    width : 100%;
+    background-color: white;
+}
+
+.table-main {
+    width : 100%;
+    border-bottom : 1px solid black; 
+    border-collapse: collapse;
+    border-radius : 7px;
+    border-style : hidden;
+    box-shadow : 0 0 0 1px #666;
+}
+
+body {
+ margin : 0px;   
+}
+
+div,table {
+    box-sizing: border-box;
+}
+
+.width-size {
+    width : 50%;
+    text-align: left;
+}
+
+.table-main td, .table-main th {
+    border-bottom: 1px solid pink;
+    padding : 15px;
+}
+
+
+
+.buy-design {
+    background-color: coral; 
+    padding : 10px;
+    border : 1px solid #eee; 
+    border-radius: 5px; 
+}
+
+.bottom {
+  
+    margin-top: 10px;
+    position : relative;
+}
+
+.buy-position {
+    position: absolute;
+    right : 0;
+}
+
+a {
+     text-decoration:none;
+    color : brown; 
+}
+a:visited{
+    text-decoration: none;
+}
