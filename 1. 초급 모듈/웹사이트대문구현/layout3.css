@@ -81,3 +81,60 @@ body {
 }
 
 
+
+.contact-us-box {
+    width : 40%;
+    height : 80%; 
+    display : block; 
+    margin : auto;
+    margin-left: auto;
+    margin-right : auto;
+    display:border;
+    box-sizing:content-box;
+    padding-left : 5%;
+    padding-right : 5%;
+    background-color: azure;  
+    position: relative;
+}
+
+.first-name {
+    float :left; 
+}
+
+.last-name {
+    float:left;
+    margin-left: 70px;
+}
+
+.main-textarea {
+    clear:both;
+    padding-top: 10px;
+}
+
+.send {
+    position : absolute;
+    bottom : 100px;
+    right : 80px;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    color : white;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+textarea {
+    
+}
+
+.email {
+    
+}
+
+.form-background {
+    width : 100%;
+    height : 500px;
+    display : border; 
+    margin : auto; 
+    background-color:rgba(0,0,0,0.5);
+}
