@@ -1,0 +1,30 @@
+
+.profile {
+    width: 10%; 
+    display:block; 
+    margin:auto;
+}
+
+.name {
+    font-size: 20px; 
+    font-family: gulim; 
+    letter-spacing: -1px; 
+    text-align: center; 
+}
+
+p {
+    text-align : center
+}
+
+.box {
+    display: block; /* display : block -> 한 행을 전부 차지해 주세요(해당 태그를 모두 박스로써 다뤄주세요) div는 박스이기 때문에 display :block 이 내장되어 있어서 지워도 무방하다. */
+    margin-left : auto; /* 오른쪽 정렬 */ 
+    margin-right : auto; /* 왼쪽 정렬 */
+    width : 400px; 
+    background-color: blue;
+    padding : 30px;
+    border : 1px solid black; 
+    text-align: center;
+    color : white; 
+    border-radius: 10px; /* 테두리 둥글게 */
+}
