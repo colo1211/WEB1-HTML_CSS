@@ -33,3 +33,46 @@
 .blog-pic {
     margin-top : 20px;
 }
+
+
+
+/* 셀렉터 문법 
+   1. 공백 : 안에 있는 모든 자손을 선택할 때 (li-inline 내에 있는 모든 li태그들을 선택)
+   2. > : 바로 아래에 있는 직계 자손을 선택 할 때
+*/
+
+
+.li-inline li{ 
+    display: inline-block;
+    margin: auto;
+    width: 100px;
+    text-align: center;
+}
+
+
+
+.navbar {
+    width : 800px; 
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    padding : 10px;
+    font-size: 30px;
+
+}
+
+.li-inline a {
+    text-decoration: none;
+    color : black;
+}
+
+.li-inline a:visited{
+    color: black;
+}
+
+
+.li-inline {
+    display: block;
+    margin: auto;
+    width : 70%;
+}
