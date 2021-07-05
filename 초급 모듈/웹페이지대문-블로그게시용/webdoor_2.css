@@ -1,0 +1,81 @@
+
+.main-background {
+    width : 100%; 
+    height : 1000px; 
+    background-image: url(../이미지파일/백두산여행2.jpg);
+    background-size: cover; 
+    /*cover : 반응형 웹, 그림은 잘려도 좋으니까 background 영역은 축소시키지 마라.
+      -> 모든 배경에 사진이 꽉찬다. 배경에 공백이 없다. 
+      contain : 그림을 잘리지 않도록 하라
+      -> 사진이 완전히 나오며, 배경에 공백이 생긴다. 
+    */
+    background-repeat: no-repeat; /* 사진 반복 X*/
+    background-position: center;
+    /* 배경이 어디서부터 채워질지 
+    : center -> 가운데 부터 채워진다. 
+    */
+    padding-top: 300px; /* margin-collapse-effect : 마진이 서로 겹치면 하나로 합쳐서 적용, 일종의 버그 */
+    /*
+        해결방안 = 두개의 마진을 안겹치게 하면 된다. 
+    1. 상위 div에 padding을 1px이라도 주어서 하위 div에 margin을 적용한다. 
+    2. 상위 div에서 마진을 사용하지 않고 padding-top 을 주어서 해결한다. (추천) 
+    */
+    position: relative;
+}
+
+body {  /*맨 위와 왼쪽의 살짝 띄워진 마진을 없애기 위한 body의 기본값을 조정*/
+    margin : 0px;
+}
+
+.main-title {
+    color : black;
+    font-size : 40px;
+}
+/*
+
+.main-title-wrap {
+    margin-top: 250px;
+}
+*/
+
+.main-text {
+    padding : 20px;
+    color : black;
+    font-size : 20px;
+    
+}
+
+.main-title-wrap {
+        text-align: center;
+}
+
+.main-button {
+    padding : 20px;
+    font-size:20px;
+    background-color: white;
+    border: none;
+    display: block;
+    margin: auto;
+}
+
+.position {
+    position : absolute;
+    bottom : 150px;
+    left : 0;
+    right : 0; 
+    margin-left:auto;
+    margin-right:auto; 
+    width : 200px;     
+}
+
+
+
+.explain {
+    width : 80%;
+    max-width: 800px;
+    margin: auto;
+    background-color: #eee;
+    text-align: center;
+    position: relative;
+    top : -50px;
+}
