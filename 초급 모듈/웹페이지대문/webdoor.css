@@ -1,0 +1,74 @@
+div {
+    box-sizing: border-box;
+}
+
+.main-background {
+    width : 100%; 
+    height : 1000px; 
+    background-image: url(../%EC%9D%B4%EB%AF%B8%EC%A7%80%ED%8C%8C%EC%9D%BC/shoes.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; /* 사진 반복 X*/
+    background-position: center;
+    padding-top: 300px; 
+    position: relative;
+}
+
+body { /* 맨 위와 왼쪽의 살짝 띄워진 마진을 없애기 위한 body의 기본값을 조정*/
+    margin : 0px;
+}
+
+.main-title {
+    color : white;
+    font-size : 40px;
+}
+/*
+
+.main-title-wrap {
+    margin-top: 250px;
+}
+*/
+
+.main-text {
+    padding : 20px;
+    color : white;
+    font-size : 20px;
+    
+}
+
+.main-title-wrap {
+    text-align: center;
+}
+
+.main-button {
+    padding : 20px;
+    font-size : 20px;
+    background-color: white;
+    border: none;
+    
+    /* 버튼 가운데 정렬 */ 
+    display: block;
+    margin: auto;
+}
+
+.position {
+    position : absolute;
+    bottom : 300px;
+    left : 0;
+    right : 0; 
+    margin-left:auto;
+    margin-right:auto; 
+    width : 200px; 
+}
+
+.notice {
+    width : 80%; /* 상위 요소의 80%*/
+    max-width: 600px;
+    background-color: #eee;
+    padding: 20px;  
+    position : relative;
+    top : -40px; /* 붕 띄워서 겹치게 한다.*/
+    
+    /* 가운데 정렬 */
+    margin: auto;
+    
+}
