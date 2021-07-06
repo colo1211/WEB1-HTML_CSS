@@ -72,3 +72,47 @@ body { /* 맨 위와 왼쪽의 살짝 띄워진 마진을 없애기 위한 body�
     margin: auto;
     
 }
+
+
+
+.form-wrap {
+    width : 100%;
+    background-color: rgba(0,0,0,0.8);;
+    margin: auto;
+    padding : 20px;
+}
+
+.form-main {
+    width : 90%;
+    max-width : 700px;
+    margin: auto;
+    background-color: white;
+    padding : 20px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+.name {
+    width : 50%;
+    float : left;
+}
+
+.email {
+    
+}
+
+.name-design {
+    display: block;
+    margin: auto;
+    padding : 15px;
+    width : 99%;
+}
+
+.Message {
+    width : 100%;
+    
+}
