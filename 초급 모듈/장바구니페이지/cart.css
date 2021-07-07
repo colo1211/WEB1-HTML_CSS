@@ -1,4 +1,4 @@
-div {
+div{
     box-sizing: border-box;
 }
 
@@ -10,23 +10,29 @@ th,td {
 .table-wrap {
     width : 100%;
     background-color: lightpink;
-    padding : 70px;
+    padding : 20px;
+}
+
+.table-link-btn-wrap {
+    width : 100%;
+    max-width : 700px;
+    position: relative;
+    margin: auto;
 }
 
 table {
+    width : 100%;
     border-collapse: collapse;
     border-radius: 10px;
     text-align: center;
     background-color: white;
 }
-    border-collapse: collapse;
-}
+   
 
 .table-main {
-    width : 80%;
+    width : 100%;
     display: block;
     margin : auto;
-    border-radius: 5px;
 }
 
 .img-size {
@@ -71,9 +77,4 @@ table {
     text-align: left;    
 }
 
-.table-link-btn-wrap {
-    width : 100%;
-    max-width : 614px;
-    position: relative;
-    margin: auto;
-}
+
