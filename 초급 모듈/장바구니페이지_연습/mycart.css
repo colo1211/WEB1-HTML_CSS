@@ -1,0 +1,68 @@
+div,button {
+    box-sizing: border-box;
+}
+body {
+    margin : 0px;
+}
+.background {
+    width : 100%; 
+    background-color: skyblue;
+    padding : 100px;
+}
+
+.table-wrap {
+    width : 80%;
+    min-width: 560px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.table-direct {
+    width : 100%;
+    
+}
+
+.col-item {
+    text-align: left;
+    width : 50%;
+}
+
+table {
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+
+.pic-size {
+    width : 100px;
+}
+
+.col-amount {
+    text-align: right;
+}
+
+td,th {
+    border-bottom: 1px solid skyblue;
+}
+
+.width-half {
+    margin-top : 20px;
+    width : 50%;
+    float:left;
+    position : relative;
+}
+
+.btn-position {
+    position: absolute;
+    right : 0; 
+}
+
+.btn-style {
+    padding : 20px;
+    background-color: darkblue;
+    color : white;
+    border-radius: 10px;
+    border : none;
+}
