@@ -1,0 +1,79 @@
+div {
+    box-sizing: border-box;
+}
+
+th,td {
+    border-bottom : 1px solid lightpink;
+    padding: 10px;
+}
+
+.table-wrap {
+    width : 100%;
+    background-color: lightpink;
+    padding : 70px;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+    border-collapse: collapse;
+}
+
+.table-main {
+    width : 80%;
+    display: block;
+    margin : auto;
+    border-radius: 5px;
+}
+
+.img-size {
+    width : 100px;
+    height : 100px;
+    display: block; 
+    margin: auto;
+}
+
+
+
+.column-amount {
+    text-align: right;
+}
+
+
+
+.width-half {
+    width : 50%;
+    float : left;
+    padding-top : 20px;
+
+}
+
+.btn-style {
+    padding: 20px;
+    background-color: orange;
+    color : white;
+    border-radius: 5px;
+    border:none;
+}
+
+.btn-position {
+    position : absolute;
+    right : 0
+}
+
+
+
+.column-item {
+    width : 50%;
+    text-align: left;    
+}
+
+.table-link-btn-wrap {
+    width : 100%;
+    max-width : 614px;
+    position: relative;
+    margin: auto;
+}
