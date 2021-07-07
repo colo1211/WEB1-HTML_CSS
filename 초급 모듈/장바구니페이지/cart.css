@@ -10,7 +10,7 @@ th,td {
 .table-wrap {
     width : 100%;
     background-color: lightpink;
-    padding : 20px;
+    padding : 50px;
 }
 
 .table-link-btn-wrap {
@@ -59,11 +59,34 @@ table {
 
 .btn-style {
     padding: 20px;
-    background-color: orange;
+    background-color: coral;
     color : white;
     border-radius: 5px;
     border:none;
+    font-size : 15px;
+    cursor : pointer;
+/*    버튼에 마우스 올리면 손가락 모양으로 변경*/
 }
+
+/*순서 : hover -> focus -> active  */
+.btn-style:hover{ /* 버튼에 마우스를 올렸을 때*/
+    background-color: chocolate;
+}
+
+.btn-style:focus { /* Click 후 : 클릭 이후에 버튼의 색깔 변경 */
+    background-color: red;
+}
+
+.btn-style:active { /* Click 중 :마우스 올리고 클릭~손가락 떼기 전 까지 색 변경*/
+    background-color: brown;
+}
+
+/*
+.btn-style:focus {  Click 중 :마우스 올리고 클릭~손가락 떼기 전 까지 색 변경
+    background-color: red;
+}
+*/
+
 
 .btn-position {
     position : absolute;
@@ -78,3 +101,15 @@ table {
 }
 
 
+
+.mylink{
+    text-decoration: none;
+}
+
+.mylink:link{
+    color : black;
+}
+
+.mylink:visited{
+    color : aqua;
+}
