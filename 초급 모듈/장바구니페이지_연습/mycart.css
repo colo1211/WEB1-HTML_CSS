@@ -65,4 +65,29 @@ td,th {
     color : white;
     border-radius: 10px;
     border : none;
+    cursor : pointer;
+}
+
+.btn-style:hover{
+    background-color: aqua;
+}
+
+.btn-style:focus{
+    background-color: red;
+}
+
+.btn-style:active{
+    background-color: blueviolet;
+}
+
+
+.my-link{
+    text-decoration: none;
+}
+
+.my-link:link{
+    color : black;
+}
+.my-link:visited{
+    color:red;
 }
