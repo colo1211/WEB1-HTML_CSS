@@ -1,25 +1,27 @@
 div {
     box-sizing: border-box;
 }
+
 .main-background {
-    width : 100%; 
-    height : 1000px; 
+    width: 100%;
+    height: 1000px;
     background-image: url(./shoes.jpg);
-    background-size: cover; 
-    background-repeat: no-repeat; /* 사진 반복 X*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* 사진 반복 X*/
     background-position: center;
-    padding-top: 300px; 
+    padding-top: 300px;
     position: relative;
 }
 
 /*커스텀 폰트 방법 1. font-face 의 url에 woff,ttf를 첨부 */
-@font-face{
-/*    src에 담긴 폰트 -> font-family : '이쁜폰트' 라고 치환해서 파일 내에서 사용하겠다. */
-    font-family : '이쁜폰트';
-    
-/*    폰트의 굵기를 미리 설정*/
-    font-weight : 400; 
-    src : url(./NanumSquare-master/NanumsquareR.woff); 
+@font-face {
+    /*    src에 담긴 폰트 -> font-family : '이쁜폰트' 라고 치환해서 파일 내에서 사용하겠다. */
+    font-family: '이쁜폰트';
+
+    /*    폰트의 굵기를 미리 설정*/
+    font-weight: 400;
+    src: url(./NanumSquare-master/NanumsquareR.woff);
     /*
     ttf 파일 : 용량이 큼(한자포함 약 2만자)
     woff,eot 파일 : 웹전용 압축 폰트 But 호환성이 낮음
@@ -40,8 +42,9 @@ div {
 
 
 
-body { /* 맨 위와 왼쪽의 살짝 띄워진 마진을 없애기 위한 body의 기본값을 조정*/
-    margin : 0px;
+body {
+    /* 맨 위와 왼쪽의 살짝 띄워진 마진을 없애기 위한 body의 기본값을 조정*/
+    margin: 0px;
     font-family: 'Nanum Pen Script', cursive;
     /*글씨체 : font-family : '글씨체1', '글씨체2', '글씨체3'; 
       1. 띄워져있는 글씨체명이 존재하므로 따옴표로 감쌀 것
@@ -50,14 +53,18 @@ body { /* 맨 위와 왼쪽의 살짝 띄워진 마진을 없애기 위한 body�
     */
 }
 
-p,h1,h3,button{
+p,
+h1,
+h3,
+button {
     transform: rotate(0.03deg);
 }
 
 .main-title {
-    color : white;
-    font-size : 40px;
+    color: white;
+    font-size: 40px;
 }
+
 /*
 
 .main-title-wrap {
@@ -66,10 +73,10 @@ p,h1,h3,button{
 */
 
 .main-text {
-    padding : 20px;
-    color : white;
-    font-size : 20px;
-    
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+
 }
 
 .main-title-wrap {
@@ -77,89 +84,232 @@ p,h1,h3,button{
 }
 
 .main-button {
-    padding : 20px;
-    font-size : 20px;
+    padding: 20px;
+    font-size: 20px;
     background-color: white;
     border: none;
-    
-    /* 버튼 가운데 정렬 */ 
+
+    /* 버튼 가운데 정렬 */
     display: block;
     margin: auto;
 }
 
 .position {
-    position : absolute;
-    bottom : 300px;
-    left : 0;
-    right : 0; 
-    margin-left:auto;
-    margin-right:auto; 
-    width : 200px; 
+    position: absolute;
+    bottom: 300px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
 }
 
 .notice {
-    width : 80%; /* 상위 요소의 80%*/
+    width: 80%;
+    /* 상위 요소의 80%*/
     max-width: 600px;
     background-color: #eee;
-    padding: 20px;  
-    position : relative;
-    top : -40px; /* 붕 띄워서 겹치게 한다.*/
-    
+    padding: 20px;
+    position: relative;
+    top: -40px;
+    /* 붕 띄워서 겹치게 한다.*/
+
     /* 가운데 정렬 */
     margin: auto;
-    
+
 }
 
 
 
 .form-wrap {
-    width : 100%;
-    background-color: rgba(0,0,0,0.8);;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
     margin: auto;
-    padding : 20px;
+    margin-top: 50px;
+    padding: 20px;
 }
 
 .form-main {
-    width : 90%;
-    max-width : 700px;
+    width: 90%;
+    max-width: 700px;
     margin: auto;
     background-color: white;
-    padding : 20px;
+    padding: 20px;
     font-size: 20px;
 }
 
 .name {
-    width : 50%;
-    float : left;
+    width: 50%;
+    float: left;
 }
 
 
 .name-design {
     display: block;
     margin: auto;
-    padding : 15px;
-    width : 99%;
+    padding: 15px;
+    width: 99%;
 }
 
 .Message {
-    width : 100%;
-    
+    width: 100%;
+
 }
 
 
 
 .nav-wrap {
     display: flex;
-    align-items : center;
+    align-items: center;
     cursor: pointer;
 }
 
 .nav-menu {
-    margin : 10px;
-    font-size : 30px;
+    margin: 10px;
+    font-size: 30px;
 }
 
 .nav-logo {
-    font-size : 50px;
-    padding-left : 10px;
+    font-size: 50px;
+    padding-left: 10px;
+}
+
+.form-wrap {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+.form-inner-wrap {
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+}
+
+.email-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.form-width-all {
+    padding: 10px;
+}
+
+.form-width-half {
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
+.name-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.textarea-input {
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.btn {
+    color: white;
+    background-color: darkorange;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 35px;
+    bottom: 20px;
+}
+
+
+
+
+.box-wrap {
+    text-align: center;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin :auto;
+}
+
+.intro-site {
+    width : 25%;
+    float: left;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+/*CSS에 조건을 주고 싶을 떄 쓰는 media query
+
+ [주의] : CSS 파일 최하단에 작성 할 것! 
+ breakpoint : 화면 분할 점 (Bootstrap 기준 : 576px,768px,992px,1200px)
+    1. 원하는 폭을 지정한 후
+    2. 그 때 적용할 CSS를 작성
+*/
+
+
+/* 태블릿 */
+@media screen and (max-width : 992px) {
+    .main-title {
+        font-size: 35px;
+    }
+
+    .main-text {
+        font-size: 17px;
+    }
+
+    .nav-menu {
+        font-size: 20px;
+    }
+
+    .nav-logo {
+        font-size: 30px;
+    }
+    .box-wrap{
+        max-width: 600px;
+    }
+    .intro-site{
+/*        2*2로 배치하기 위해 width를 50%로 설정 */
+        width : 50%;
+        border : none;
+    }
+
+}
+
+/* 모바일 */
+/*화면의 최대 폭이 768px 이하일 때, 적용*/
+@media screen and (max-width : 768px) {
+    .main-title {
+        font-size: 30px;
+    }
+
+    .main-text {
+        font-size: 15px;
+    }
+
+    .nav-menu {
+        font-size: 15px;
+    }
+
+    .nav-logo {
+        font-size: 20px;
+    }
+    .intro-site{
+        width : 100%;
+        float : none;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        border-left : none;
+        border-right : none;
+    }
+
+
 }
