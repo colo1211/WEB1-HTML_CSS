@@ -2,6 +2,12 @@ div {
     box-sizing: border-box;
 }
 
+/*웹폰트 방법 1. font-face */
+@font-face{ 
+    font-family : '개미는오늘도'; /*이걸로 밑에 다운받은걸 치환해줘*/
+    src : url(./NanumSquare-master/NanumSquareR.woff);
+}
+
 .main-background {
     width : 100%; 
     height : 1000px; 
@@ -28,6 +34,11 @@ div {
 
 body {  /*맨 위와 왼쪽의 살짝 띄워진 마진을 없애기 위한 body의 기본값을 조정*/
     margin : 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p,h3,h2,h1,h4,h5{
+    transform: rotate(0.03deg);
 }
 
 .main-title {
@@ -81,4 +92,32 @@ body {  /*맨 위와 왼쪽의 살짝 띄워진 마진을 없애기 위한 body�
     text-align: center;
     position: relative;
     top : -50px;
+}
+
+.flex-container {
+    display : flex;
+    align-items: center;
+}
+
+.flex-logo {
+    padding-left : 20px;
+    font-size : 30px; 
+    font-weight: 600;
+}
+
+.flex-menu {
+    margin : 5px;
+    font-size: 20px;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-box {
+    width : 100px; 
+    height : 100px;
+    background-color: coral;
+    margin : 5px; 
 }
