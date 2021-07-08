@@ -1,0 +1,40 @@
+.div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.mybox-container {
+    max-width: 1200px;
+}
+
+.mybox {
+    width: 22%;
+    max-width: 200px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    float: left;
+}
+
+@media screen and (max-width : 768px) {
+    
+    .mybox-container{
+        max-width: 590px;
+    }
+    .mybox {
+        width: 50%;
+        background-color: orange;
+    }
+}
+
+
+@media screen and (max-width : 576px) {
+    .mybox {
+        width: 100%;
+        float: none;
+        background-color: aqua;
+    }
+}
