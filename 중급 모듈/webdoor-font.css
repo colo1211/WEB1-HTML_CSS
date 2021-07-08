@@ -240,6 +240,17 @@ button {
     margin :auto;
 }
 
+.box-wrap i{
+    width : 100px;
+    height: 100px;
+    background-color: coral;
+    border-radius: 100px;
+    color : white;
+    padding-top: 17px;
+    box-sizing: border-box;
+    
+}
+
 .intro-site {
     width : 25%;
     float: left;
@@ -310,6 +321,8 @@ button {
         border-left : none;
         border-right : none;
     }
-
+    .intro-site{
+        padding: 40px;
+    }
 
 }
