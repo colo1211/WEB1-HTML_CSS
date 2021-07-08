@@ -68,8 +68,10 @@ p,h3,h2,h1,h4,h5{
 .main-button {
     padding : 20px;
     font-size:20px;
-    background-color: white;
+    background-color: #eee;
+    color : coral;
     border: none;
+    border-radius: 50px;
     display: block;
     margin: auto;
 }
@@ -109,7 +111,7 @@ p,h3,h2,h1,h4,h5{
 }
 
 .flex-menu {
-    margin : 5px;
+    margin : 20px;
     font-size: 40px;
 }
 
@@ -187,6 +189,15 @@ p,h3,h2,h1,h4,h5{
     padding : 30px;
 }
 
+.content-box i{
+    width:100px;
+    height : 100px;
+    background-color: burlywood;
+    border-radius: 100px;
+    padding : 20px;
+    box-sizing: border-box;
+}
+
 .box-wrap {
     width : 100%;
     text-align: center;
@@ -195,6 +206,7 @@ p,h3,h2,h1,h4,h5{
     padding : 50px;
 }
 
+/*태블릿 모드*/
 @media screen and (max-width : 1200px){
     .flex-logo{
         font-size:45px;
@@ -208,7 +220,7 @@ p,h3,h2,h1,h4,h5{
         border : none;
     }
 }
-
+/*모바일모드*/
 @media screen and (max-width :768px){
     .flex-logo{
         font-size:35px;
