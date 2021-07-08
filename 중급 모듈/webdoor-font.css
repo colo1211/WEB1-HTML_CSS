@@ -1,0 +1,165 @@
+div {
+    box-sizing: border-box;
+}
+.main-background {
+    width : 100%; 
+    height : 1000px; 
+    background-image: url(./shoes.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; /* 사진 반복 X*/
+    background-position: center;
+    padding-top: 300px; 
+    position: relative;
+}
+
+/*커스텀 폰트 방법 1. font-face 의 url에 woff,ttf를 첨부 */
+@font-face{
+/*    src에 담긴 폰트 -> font-family : '이쁜폰트' 라고 치환해서 파일 내에서 사용하겠다. */
+    font-family : '이쁜폰트';
+    
+/*    폰트의 굵기를 미리 설정*/
+    font-weight : 400; 
+    src : url(./NanumSquare-master/NanumsquareR.woff); 
+    /*
+    ttf 파일 : 용량이 큼(한자포함 약 2만자)
+    woff,eot 파일 : 웹전용 압축 폰트 But 호환성이 낮음
+    */
+}
+
+/* 호환성을 위해서 모두 첨부하는 방법도 있음
+@font-face { 
+  font-family: 'NanumSquare'; 
+  font-weight: 400; 
+  src: url(NanumSquareR.eot); 
+  src: url(NanumSquareR.eot?#iefix) format('embedded-opentype'), 
+      url(NanumSquareR.woff) format('woff')
+}
+*/
+
+/*커스텀 폰트 방법 2. google font*/
+
+
+
+body { /* 맨 위와 왼쪽의 살짝 띄워진 마진을 없애기 위한 body의 기본값을 조정*/
+    margin : 0px;
+    font-family: 'Nanum Pen Script', cursive;
+    /*글씨체 : font-family : '글씨체1', '글씨체2', '글씨체3'; 
+      1. 띄워져있는 글씨체명이 존재하므로 따옴표로 감쌀 것
+      2. 여러개 쓰는 이유 : 글씨체1이 없으면 글씨체2를 적용함
+      3. 커스텀 폰트 @font-face
+    */
+}
+
+p,h1,h3,button{
+    transform: rotate(0.03deg);
+}
+
+.main-title {
+    color : white;
+    font-size : 40px;
+}
+/*
+
+.main-title-wrap {
+    margin-top: 250px;
+}
+*/
+
+.main-text {
+    padding : 20px;
+    color : white;
+    font-size : 20px;
+    
+}
+
+.main-title-wrap {
+    text-align: center;
+}
+
+.main-button {
+    padding : 20px;
+    font-size : 20px;
+    background-color: white;
+    border: none;
+    
+    /* 버튼 가운데 정렬 */ 
+    display: block;
+    margin: auto;
+}
+
+.position {
+    position : absolute;
+    bottom : 300px;
+    left : 0;
+    right : 0; 
+    margin-left:auto;
+    margin-right:auto; 
+    width : 200px; 
+}
+
+.notice {
+    width : 80%; /* 상위 요소의 80%*/
+    max-width: 600px;
+    background-color: #eee;
+    padding: 20px;  
+    position : relative;
+    top : -40px; /* 붕 띄워서 겹치게 한다.*/
+    
+    /* 가운데 정렬 */
+    margin: auto;
+    
+}
+
+
+
+.form-wrap {
+    width : 100%;
+    background-color: rgba(0,0,0,0.8);;
+    margin: auto;
+    padding : 20px;
+}
+
+.form-main {
+    width : 90%;
+    max-width : 700px;
+    margin: auto;
+    background-color: white;
+    padding : 20px;
+    font-size: 20px;
+}
+
+.name {
+    width : 50%;
+    float : left;
+}
+
+
+.name-design {
+    display: block;
+    margin: auto;
+    padding : 15px;
+    width : 99%;
+}
+
+.Message {
+    width : 100%;
+    
+}
+
+
+
+.nav-wrap {
+    display: flex;
+    align-items : center;
+    cursor: pointer;
+}
+
+.nav-menu {
+    margin : 10px;
+    font-size : 30px;
+}
+
+.nav-logo {
+    font-size : 50px;
+    padding-left : 10px;
+}
