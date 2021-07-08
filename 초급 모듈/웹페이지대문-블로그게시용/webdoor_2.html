@@ -7,7 +7,7 @@
     <title>My Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yomogi&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,18 +21,69 @@
     <div class='main-background'>
         <div class='main-title-wrap'>
             <h3 class='main-title'>백두산 여행 관광 예약</h3>
-            <p class=main-text>멀다고만 느꼈던 백두산을 갈 수 있는 초특가 DB투어! 다같이 백두산에 가보실까요?</p>
+            <p class=main-text>멀다고만 느꼈던 백두산을 갈 수 있는 초특가 BD투어! 다 같이 백두산에 가보실까요?</p>
         </div>
-        <button class='main-button position'>예약</button>
+        <button class='main-button position'>More Info</button>
     </div>
     <div class='explain'>
         <h1>백두산 상품 최저가 등록하기</h1>
-        <p>아름다운 백두산 투어에 등록해보세요!</p>
+        <p>아름다운 백두산 투어에 등록해보세요! 당신에게 잊지 못할 추억을 선사해 드립니다!
+        </p>
     </div>
-    <div class='explain' style='padding: 60px;'>
-        <h1>백두산 상품 최저가 등록하기</h1>
-        <p>아름다운 백두산 투어에 등록해보세요!</p>
+
+    <div class="box-wrap">
+        <div class="content-box">
+            <h2>Safety Toor</h2>
+            <p>치안에 걱정없도록 계획한 안전한 여행</p>
+        </div>
+        <div class="content-box">
+            <h2>Corona Free</h2>
+            <p>코로나 걱정 없는 안전한 여행</p>
+        </div>
+        <div class="content-box">
+            <h2>Historical</h2>
+            <p>민족의 혼이 녹아있는 백두산을 통해 역사를 알아보는 여행</p>
+        </div>
+        <div class="content-box">
+            <h2>Most Cheap Tour</h2>
+            <p>다른 여타 패키지 보다 가장 값 싼 패키지 여행</p>
+        </div>
+        
+        <div style='clear: both'></div>
     </div>
+  
+    
+    <div class='form-wrap'>
+        <div class='form-inner'>
+            <h2>백두산 여행 예약</h2>
+            <div class='form-all-width'>
+                <p>이메일</p>
+                <input class='non-name-input' type='email' placeholder="email@naver.com">
+            </div>
+            <div class='form-half-width'>
+                <p>이름</p>
+                <input class='name-input' type='text' placeholder="홍길동">
+            </div>
+            <div class='form-half-width'>
+                <p>여행 날짜</p>
+                <input class='name-input' type='date'>
+            </div>
+
+            <div style='clear: both'></div>
+
+            <div class="form-all-width">
+                <p>패키지 요구사항</p>
+                <textarea class='non-name-input' rows="10"></textarea>
+            </div>
+
+            <div class='form-all-width'>
+                <input type='checkbox' id='check'>
+                <label for='check'><strong>위의 여행 패키지는 환불이 없습니다. 동의하십니까? </strong></label>
+            </div>
+            <button class='button'>예약</button>
+        </div>
+    </div>
+
 </body>
 
 </html>

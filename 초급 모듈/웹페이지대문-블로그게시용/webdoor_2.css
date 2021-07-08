@@ -3,10 +3,12 @@ div {
 }
 
 /*웹폰트 방법 1. font-face */
+/*
 @font-face{ 
-    font-family : '개미는오늘도'; /*이걸로 밑에 다운받은걸 치환해줘*/
+    font-family : '개미는오늘도'; 이걸로 밑에 다운받은걸 치환해줘
     src : url(./NanumSquare-master/NanumSquareR.woff);
 }
+*/
 
 .main-background {
     width : 100%; 
@@ -34,7 +36,7 @@ div {
 
 body {  /*맨 위와 왼쪽의 살짝 띄워진 마진을 없애기 위한 body의 기본값을 조정*/
     margin : 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nanum Pen Script', cursive;
 }
 
 p,h3,h2,h1,h4,h5{
@@ -97,17 +99,18 @@ p,h3,h2,h1,h4,h5{
 .flex-container {
     display : flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .flex-logo {
     padding-left : 20px;
-    font-size : 30px; 
+    font-size : 60px; 
     font-weight: 600;
 }
 
 .flex-menu {
     margin : 5px;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .flex-wrap {
@@ -120,4 +123,103 @@ p,h3,h2,h1,h4,h5{
     height : 100px;
     background-color: coral;
     margin : 5px; 
+}
+
+.form-wrap {
+    background-color: rgba(0,0,0,0.8);
+    width : 100%;
+    padding : 60px;
+}
+
+.form-inner {
+    width : 100%;
+    max-width: 750px;
+    padding : 20px;
+    margin:auto;
+    background-color: white;
+    position : relative;
+}
+
+.form-all-width {
+    padding : 10px; 
+}
+
+.non-name-input {
+    width : 100%;
+    padding : 15px;
+    border : 1px solid #eee;
+}
+
+.form-half-width {
+    width : 50%; 
+    float : left; 
+    padding : 10px; 
+}
+
+.name-input {
+    width : 100%;
+    padding : 15px;
+    border : 1px solid #eee;
+}
+
+.button {
+    max-width: 190px;
+    background-color: skyblue;
+    color : white; 
+    width : 20%; 
+    padding : 15px; 
+    border: none;
+    border-radius: 10px; 
+    font-size: 20px;
+    position : absolute;
+    right : 30px;
+    bottom : 5px;
+}
+
+
+
+
+.content-box {
+    width : 25%;
+    float: left;
+    border-left : 1px solid #eee;
+    border-right : 1px solid #eee;
+    padding : 30px;
+}
+
+.box-wrap {
+    width : 100%;
+    text-align: center;
+    max-width: 1200px;
+    margin : auto;
+    padding : 50px;
+}
+
+@media screen and (max-width : 1200px){
+    .flex-logo{
+        font-size:45px;
+    }
+    .flex-menu{
+        font-size : 30px;
+    }
+    .content-box {
+        float: left;
+        width : 50%;
+        border : none;
+    }
+}
+
+@media screen and (max-width :768px){
+    .flex-logo{
+        font-size:35px;
+    }
+    .flex-menu{
+        font-size : 15px;
+    }
+    .content-box {
+        float: none;
+        border-top : 1px solid #eee;
+        border-bottom : 1px solid #eee;
+        width : 100%;
+    }
 }
