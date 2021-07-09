@@ -62,26 +62,46 @@
         <div style='clear: both'></div>
     </div>
 
+<!--   상품 가격 애니메이션 영역 (위에서 아래로 50%)
+       알아야 할 개념
+       1. position (top & bottom 활용)
+       2. hover 
+       3. opacity
+       4. overflow : hidden
+   -->
+   
+<!--   여기서는 
+       wrap-grey(이미지와 크기가 동일한 투명한 box)를 hover하면
+       grey-box 영역을 아래 혹은 위에 숨겨뒀다가 transition 으로 효과를 부여
+   -->
     <div class="product-container">
         <div class="product-box">
             <div style='position: relative'>
-                <div class='grey-box'>
-                    <p>120,000원</p>
+                <div class='wrap-grey'>
+                    <div class='grey-box'>
+                        <p>120,000원</p>
+                    </div>
                 </div>
                 <img src="../이미지파일/백두산prouct1.JPG">
             </div>
         </div>
         <div class="product-box">
             <div style='position : relative'>
-                <div class='grey-box'>
-                    <p>150,000원</p>
+                <div class='wrap-grey'>
+                    <div class='grey-box'>
+                        <p>150,000원</p>
+                    </div>
                 </div>
                 <img src="../이미지파일/백두산product2.JPG">
             </div>
         </div>
         <div class="product-box">
             <div style='position : relative'>
-               <div class='grey-box'><p>170,000원</p></div>
+                <div class='wrap-grey'>
+                    <div class='grey-box'>
+                        <p>170,000원</p>
+                    </div>
+                </div>
                 <img src="../이미지파일/백두산product.JPG">
             </div>
         </div>

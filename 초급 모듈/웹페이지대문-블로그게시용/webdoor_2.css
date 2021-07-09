@@ -207,6 +207,69 @@ p,h3,h2,h1,h4,h5{
     padding : 50px;
 }
 
+
+.product-container {
+    width : 90%;
+    max-width: 1200px;
+    margin : auto;
+    background-color: #f6f6f6; 
+    
+}
+
+.product-box {
+    float: left;
+    width : 33.3%;
+    padding : 50px;
+}
+
+.product-box img{
+    width : 100%;
+   
+}
+
+/* 애니메이션 방법 
+1. 시작화면 제작 
+2. 최종화면 제작 
+3. transition/ 트리거 장착 (발동 조건 : hover[마우스 올리면])
+*/
+
+/*결과물 미리 제작 이후 투명도를 0으로 설정*/
+.grey-box {
+    position : relative;
+    bottom : 100%;
+    background-color: rgba(0,0,0,0.5);
+    width : 100%;
+    height : 100%;
+    padding-top: 80%;
+    transition: all 0.3s;
+}
+
+.grey-box:hover{
+/*    마우스 갖다 댄 이후, 투명도 0%*/
+    opacity: 1; 
+}
+
+.grey-box p{
+    color : white; 
+    font-size : 20px; 
+    text-align: center;
+}
+
+.wrap-grey {
+    width : 100%; 
+    height : 100%;
+    position : absolute;
+    overflow: hidden;
+    /*잘리는 부분은 옆으로 새지 않고 안보이게끔 처리한다. */
+}
+
+/*wrap-gray(이미지 위의 투명한 box)를 hover하면, 
+grey-box가 위에서 내려온다. (bottom : 50%)
+*/
+.wrap-grey:hover .grey-box{
+    bottom : 50%;
+}
+
 /*태블릿 모드*/
 @media screen and (max-width : 1200px){
     .flex-logo{
@@ -237,49 +300,3 @@ p,h3,h2,h1,h4,h5{
     }
 }
 
-.product-container {
-    width : 90%;
-    max-width: 1200px;
-    margin : auto;
-    background-color: #f6f6f6; 
-    
-}
-
-.product-box {
-    float: left;
-    width : 33.3%;
-    padding : 50px;
-}
-
-.product-box img{
-    width : 100%;
-   
-}
-
-/* 애니메이션 방법 
-1. 시작화면 제작 
-2. 최종화면 제작 
-3. transition/ 트리거 장착 (발동 조건 : hover[마우스 올리면])
-*/
-
-/*결과물 미리 제작 이후 투명도를 0으로 설정*/
-.grey-box {
-    position : absolute;
-    width : 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    opacity: 0; /* 마우스 갖다 대기 이전, 투명도 100%*/
-    text-align: center;
-    padding-top : 45%;
-    transition: all 0.5s;
-}
-
-.grey-box:hover{
-/*    마우스 갖다 댄 이후, 투명도 0%*/
-    opacity: 1; 
-}
-
-.grey-box p{
-    color : white; 
-    font-size : 20px; 
-}
