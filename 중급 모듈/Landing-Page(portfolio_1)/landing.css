@@ -31,7 +31,7 @@ div {
 
 
 .wrap-first-page {
-    background-image: linear-gradient(to bottom, #499add , #4e61c0);
+    background: linear-gradient(to bottom, #499add , white);
     height: 550px;
 /*    padding: 20px;*/
     color: white;
