@@ -1,0 +1,23 @@
+
+.my-btn-style {
+    border-radius: 50px;
+}
+
+.my-line {
+    width : 30%;
+    height : 5px;
+    margin:auto; 
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pricing img{
+    width : 100px;
+    height : 100px;
+}
+
+.pricing {
+    padding-top : 30px;
+    padding-bottom: 30px;
+}
