@@ -1,0 +1,206 @@
+div {
+    box-sizing: border-box;
+}
+
+i {
+    color: #6fbaf8;
+}
+
+body {
+    margin: 0px;
+    background-color: #f7f9fc;
+}
+
+/*
+h2,
+h6 {
+    font-family: 'Cute Font', cursive;
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Jua', sans-serif;
+}
+*/
+
+p {
+    font-family: 'Cute Font', cursive;
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h2,
+h6 {
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Jua', sans-serif;
+}
+
+
+.background-container {
+    background-color: white;
+    border-radius: 50px;
+}
+
+/*profile 이미지 설정*/
+.container img {
+    margin-top: 15px;
+    border-radius: 50px;
+}
+
+.col-bar {
+    width: 2px;
+    height: 70%;
+    background-color: #eee;
+}
+
+
+
+.col-loc {
+    position: absolute;
+    right: 20%;
+    top: 15%;
+}
+
+.btn-custom {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    border: none;
+    background-color: cornflowerblue;
+}
+
+.wrap-profile {
+    float: left;
+    width: 50%;
+    padding: 25px;
+}
+
+
+
+
+
+.bar-skyblue {
+    width : 20%;
+    background-color: #6fbaf8;
+}
+
+.bar-gray {
+    width : 80%; 
+    height : 100%;
+    background-color: #eee;
+}
+
+.box-main-title {
+    font-weight: 600px;
+}
+
+.works-container {
+    height: 400px;
+    padding: 30px;
+}
+
+.sign-in {
+    height: 200px;
+}
+
+.wrap-work {
+    padding: 30px;
+    height: 400px;
+}
+
+.wrap-about-skills {
+    height: 600px;
+    padding: 30px;
+    position: relative;
+}
+
+
+
+
+
+.skill-bar {
+    width: 95%;
+    height: 2px;
+    background-color: #eee;
+    margin: auto;
+}
+
+.skill-button {
+    border: 3px solid #eee;
+    border-radius: 50px;
+    background-color: white;
+    font-weight: 700;
+}
+
+.sign-up {
+    height: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.sign-up p {
+    color: #6fbaf8;
+}
+
+.sign-up p:hover {
+    cursor: pointer;
+}
+
+.sign-up p:focus {
+    color: purple;
+}
+
+.sign-up p:hover {
+    color: aqua;
+}
+
+.sign-up i {
+    font-size: 50px;
+    color: #6fbaf8;
+}
+
+.friends {
+    height: 50%;
+    padding: 10px;
+}
+
+.friend-box img {
+    width: 60px;
+    height: 60px;
+}
+
+.friend-box-content {
+    float: left;
+    width: 50%;
+}
+
+.bar-width-all {
+    width : 100%;
+    height : 5px;
+}
+
+.sky-bar {
+    float : left; 
+    width : 20%;
+    height : 100%; 
+    background-color: #6fbaf8;
+}
+
+.gray-bar {
+    float : left;
+    width : 80%;
+    height : 100%; 
+    background-color: #eee;
+}
+
+@media screen and (max-width :768px) {
+    .wrap-work {
+        height: 200px;
+    }
+
+    .wrap-about-skills {
+        height: 400px;
+    }
+}
+
+
