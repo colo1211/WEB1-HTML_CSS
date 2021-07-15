@@ -339,6 +339,13 @@ button {
     background-color: #f6f6f6;
 }
 
+.item-container::after{
+    content : ''; /*내용은 존재하면 안된다.*/
+    display: block; /*div box의 특성을 추가*/
+    clear: both;
+}
+
+
 
 
 .item-box {
@@ -378,4 +385,54 @@ button {
 
 .wrap-grey:hover .grey-box{
     top: 50%;
+}
+
+.text {
+    text-align: center;
+}
+
+/*
+text 클래스의 처음 글자만 스타일링해주는 
+    Pseudo-elements(::) 중 first-letter
+  자주 사용 하는 것 
+1. after : 내부의 맨 뒤에 무언가를 넣어준다. 
+2. before : 내부의 맨 앞에 무언가를 넣어준다. 
+
+    : 하나만 사용해도 무방하지만, 상태를 나타내는 Pseuodo-elements와 구분하기 위해서 ::으로 정의한다.
+    (호환성에도 유리)
+3. pseudo-element를 이용하여 clear:both를 구현할 수 있다. 
+
+*/
+
+.text::first-letter{
+    color : blue;
+    font-size : 100px;
+}
+
+.text::after{ 
+    content : '사실 아닙니다^^';
+    color : red;
+}
+
+/*
+호환성을 위해 쓰는 prefix
+-webkit- : 옛 버전 크롬 
+-moz- : 옛 버전 파이어폭스
+-ms- : 옛 버전 익스프로러 
+*/
+.test::-webkit-input-placeholder {
+    color : coral;
+    text-align: center;
+}
+
+progress {
+    -webkit-appearance: none;
+}
+
+.test-progress::-webkit-progress-bar{
+    background-color: #eee;
+}
+
+.test-progress::-webkit-progress-value{
+    background-color: deepskyblue;
 }
