@@ -64,9 +64,9 @@ $서브색상 : #111111;
 // @mixin - 함수 선언
 // @include - 함수 호출
 
-@mixin 기본제목($a,$b){
-    font-size : $a;
-    letter-spacing: $b;
+@mixin 기본제목($폰트사이즈,$자간){
+    font-size : $폰트사이즈;
+    letter-spacing: $자간;
 }
 
 h1{
