@@ -17,23 +17,24 @@
 $메인색상 : #ebb774;
 $서브색상 : #111111;
 
-.text{
-    color : $서브색상;
+.text {
+    color: $서브색상;
 }
 
-.box{
+.box {
     background-color: $메인색상;
 }
 
 //SASS 문법 2. 
 // Nesting : CSS Selector를 좀 더 HTML 스럽게 짤 수 있게끔 해주는 문법
 
-.main-background{
-    .div{
+.main-background {
+    .div {
         background-color: white;
     }
+
     h3 {
-        font-size : 30px;
+        font-size: 30px;
     }
 }
 
@@ -50,12 +51,12 @@ $서브색상 : #111111;
 //@extend : '연장하라' 의 의미를 가짐
 
 %btn {
-    padding : 10px;
-    font-size : 16px;
+    padding: 10px;
+    font-size: 16px;
     background-color: white;
 }
 
-.btn-green{
+.btn-green {
     @extend %btn;
     background-color: green;
 }
@@ -64,24 +65,99 @@ $서브색상 : #111111;
 // @mixin - 함수 선언
 // @include - 함수 호출
 
-@mixin 기본제목($폰트사이즈,$자간){
-    font-size : $폰트사이즈;
+@mixin 기본제목($폰트사이즈, $자간) {
+    font-size: $폰트사이즈;
     letter-spacing: $자간;
 }
 
-h1{
+h1 {
     @include 기본제목(10px, -5px)
 }
-h2{
-    @include 기본제목(20px, -5px) 
-}
-h3{
-    @include 기본제목(30px, -5px) 
+
+h2 {
+    @include 기본제목(25px, -5px)
 }
 
+h3 {
+    @include 기본제목(31px, -5px)
+}
 
 
+//1.list
+.ul-wrap {
+    width: 70%;
+    margin: auto;
 
+    ul {
+        list-style: none;
+    }
 
+    li {
+        border: 1px solid black;
+        margin: 5px;
+        background-color: greenyellow;
+        border-radius: 10px;
+        padding: 15px;
+        cursor: pointer;
+        font-weight: 800;
+    }
 
+    li:active {
+        background-color: skyblue;
+    }
 
+}
+
+//2. alert-box
+@mixin alert-box($너비,$색상) {
+    border: 1px solid black;
+    background-color: $색상;
+    width: $너비;
+    float: left;
+    padding: 10px;
+}
+
+.alert-wrap {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    .alert-1 {
+        p {
+            @include alert-box(50%,#eee);
+        }
+    }
+    .alert-2{
+        p{
+            @include alert-box(33.3%,skyblue);
+        }
+    }
+}
+
+//3. css로 부트스트랩 col 구현하기
+
+%box-display{
+    border : 5px solid black ;
+    background-color: orange;
+    padding : 5px;
+}
+
+.row{
+    text-align: center;
+    width : 70%;
+    margin : auto;
+    .col-6{ // 2개
+        width : 50%;
+        float : left;      
+        @extend %box-display;
+    }
+    .col-4{ // 3개 
+        width : 33.3%;
+        float : left;
+        @extend %box-display;
+    }
+    .col-3{ // 4개
+        width : 25%; 
+        float : left;
+        @extend %box-display;
+    }
+}
