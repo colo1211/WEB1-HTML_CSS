@@ -1,0 +1,188 @@
+//// SASS : 괄호, 세미콜론 X
+//// SCSS : 괄호, 세미콜론 O 
+//
+//// SCSS/ SASS 파일은 반드시 Compile 해야한다. 
+//// 웹브라우저는 HTML,CSS,JS 3가지 언어밖에 모르기 때문. 
+//// 수동compile(only 복붙) : https://www.sassmeister.com/
+//// 자동compile : https://scout-app.io/
+//
+//
+//// SASS 문법 3. @import
+//
+////SASS 문법 1.
+////자주 쓰는 값은 변수로 선언 가능
+////$변수명 : 값
+//
+//$메인색상 : #ebb774;
+//$서브색상 : #111111;
+//
+//.text {
+//    color: $서브색상;
+//}
+//
+//.box {
+//    background-color: $메인색상;
+//}
+//
+////SASS 문법 2. 
+//// Nesting : CSS Selector를 좀 더 HTML 스럽게 짤 수 있게끔 해주는 문법
+//
+//.main-background {
+//    .div {
+//        background-color: white;
+//    }
+//
+//    h3 {
+//        font-size: 30px;
+//    }
+//}
+//
+////SASS 문법 3.
+//// @import : CSS Nomalize 를 쌩으로 쓰지 말고 끌어와서 사용한다.
+//// 유의 사항 : _reset.scss 
+//// _는 컴파일 금지 명령
+
+////SASS 문법 4.
+// @extend 다음엔 셀렉터 = 기존 class 등을 재활용 할 시
+//// %클래스명{}
+//// 재사용을 위해
+//// 1. 기본 스타일들은 %기호로 묶기
+//// 2. 사용할 때는 @extend %클래스명
+////@extend : '연장하라' 의 의미를 가짐
+//
+//%btn {
+//    padding: 10px;
+//    font-size: 16px;
+//    background-color: white;
+//}
+//
+//.btn-green {
+//    @extend %btn;
+//    background-color: green;
+//}
+//
+////SASS 문법 5. 암기 TIP! mixinclude
+//// @mixin - 함수 선언
+//// @include - 함수 호출
+//
+//@mixin 기본제목($폰트사이즈, $자간) {
+//    font-size: $폰트사이즈;
+//    letter-spacing: $자간;
+//}
+//
+//h1 {
+//    @include 기본제목(10px, -5px)
+//}
+//
+//h2 {
+//    @include 기본제목(25px, -5px)
+//}
+//
+//h3 {
+//    @include 기본제목(31px, -5px)
+//}
+
+
+
+@import '_reset.scss';
+
+//0.list
+@mixin box-color($color){
+    background-color: $color; 
+}
+
+.list-wrap{
+    ul{
+        list-style: none;
+    }
+    li{
+        border : 1px solid #eee;
+        padding : 20px ;
+        color : darkgrey;
+    }
+    .first{
+        @include box-color(blue);
+    }
+}
+
+
+//1.list
+.ul-wrap {
+    width: 70%;
+    margin: auto;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        border: 1px solid #eee;
+        margin: 5px;
+        background-color: skyblue;
+        border-radius: 10px;
+        padding: 15px;
+        cursor: pointer;
+        font-weight: 800;
+    }
+
+    li:active {
+        background-color: orange;
+    }
+
+}
+
+//2. alert-box
+@mixin alert-box($너비,$색상) {
+    border: 1px solid black;
+    background-color: $색상;
+    width: $너비;
+    float: left;
+    padding: 10px;
+}
+
+.alert-wrap {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    .alert-1 {
+        p {
+            @include alert-box(50%,#eee);
+        }
+    }
+    .alert-2{
+        p{
+            @include alert-box(33.3%,skyblue);
+        }
+    }
+}
+
+//3. css로 부트스트랩 grid 구현하기
+
+
+// 뼈대 디자인만 모아 놓은 클래스 -> % 대신에 .으로 사용 가능하고, 재활용할 때는 @extend 키워드를 작성한다. 
+.box-display{
+    border : 5px solid black ;
+    background-color: orange;
+    padding : 5px;
+}
+
+.row{
+    text-align: center;
+    width : 70%;
+    margin : auto;
+    .col-6{ // 2개
+        width : 50%;
+        float : left;      
+        @extend .box-display;
+    }
+    .col-4{ // 3개 
+        width : 33.3%;
+        float : left;
+        @extend .box-display;
+    }
+    .col-3{ // 4개
+        width : 25%; 
+        float : left;
+        @extend .box-display;
+    }
+}
