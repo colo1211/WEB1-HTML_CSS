@@ -1,0 +1,583 @@
+div {
+    box-sizing: border-box;
+}
+
+.main-background {
+    width: 100%;
+    height: 1000px;
+    background-image: url(./shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* 사진 반복 X*/
+    background-position: center;
+    padding-top: 300px;
+    position: relative;
+}
+
+/*커스텀 폰트 방법 1. font-face 의 url에 woff,ttf를 첨부 */
+@font-face {
+    /*    src에 담긴 폰트 -> font-family : '이쁜폰트' 라고 치환해서 파일 내에서 사용하겠다. */
+    font-family: '이쁜폰트';
+
+    /*    폰트의 굵기를 미리 설정*/
+    font-weight: 400;
+    src: url(./NanumSquare-master/NanumsquareR.woff);
+    /*
+    ttf 파일 : 용량이 큼(한자포함 약 2만자)
+    woff,eot 파일 : 웹전용 압축 폰트 But 호환성이 낮음
+    */
+}
+
+/* 호환성을 위해서 모두 첨부하는 방법도 있음
+@font-face { 
+  font-family: 'NanumSquare'; 
+  font-weight: 400; 
+  src: url(NanumSquareR.eot); 
+  src: url(NanumSquareR.eot?#iefix) format('embedded-opentype'), 
+      url(NanumSquareR.woff) format('woff')
+}
+*/
+
+/*커스텀 폰트 방법 2. google font*/
+
+
+
+body {
+    /* 맨 위와 왼쪽의 살짝 띄워진 마진을 없애기 위한 body의 기본값을 조정*/
+    margin: 0px;
+    font-family: 'Nanum Pen Script', cursive;
+    /*글씨체 : font-family : '글씨체1', '글씨체2', '글씨체3'; 
+      1. 띄워져있는 글씨체명이 존재하므로 따옴표로 감쌀 것
+      2. 여러개 쓰는 이유 : 글씨체1이 없으면 글씨체2를 적용함
+      3. 커스텀 폰트 @font-face
+    */
+}
+
+p,
+h1,
+h3,
+button {
+    transform: rotate(0.03deg);
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+}
+
+/*
+
+.main-title-wrap {
+    margin-top: 250px;
+}
+*/
+
+.main-text {
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.main-title-wrap {
+    text-align: center;
+}
+
+.main-button {
+    padding: 20px;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+
+    /* 버튼 가운데 정렬 */
+    display: block;
+    margin: auto;
+}
+
+.position {
+    position: absolute;
+    bottom: 300px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.notice {
+    width: 80%;
+    /* 상위 요소의 80%*/
+    max-width: 600px;
+    background-color: #eee;
+    padding: 20px;
+    position: relative;
+    top: -40px;
+    /* 붕 띄워서 겹치게 한다.*/
+
+    /* 가운데 정렬 */
+    margin: auto;
+
+}
+
+
+
+.form-wrap {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.form-main {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.name {
+    width: 50%;
+    float: left;
+}
+
+
+.name-design {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    width: 99%;
+}
+
+.Message {
+    width: 100%;
+
+}
+
+
+
+.nav-wrap {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-menu {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.nav-logo {
+    font-size: 50px;
+    padding-left: 10px;
+}
+
+.form-wrap {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+.form-inner-wrap {
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+}
+
+.email-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.form-width-all {
+    padding: 10px;
+}
+
+.form-width-half {
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
+.name-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.textarea-input {
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.btn {
+    color: white;
+    background-color: darkorange;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 35px;
+    bottom: 20px;
+}
+
+
+
+
+.box-wrap {
+    text-align: center;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box-wrap i {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    border-radius: 100px;
+    color: white;
+    padding-top: 17px;
+    box-sizing: border-box;
+
+}
+
+.intro-site {
+    width: 25%;
+    float: left;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+
+
+/*CSS에 조건을 주고 싶을 떄 쓰는 media query
+
+ [주의] : CSS 파일 최하단에 작성 할 것! 
+ breakpoint : 화면 분할 점 (Bootstrap 기준 : 576px,768px,992px,1200px)
+    1. 원하는 폭을 지정한 후
+    2. 그 때 적용할 CSS를 작성
+*/
+
+
+/* 태블릿 */
+@media screen and (max-width : 992px) {
+    .main-title {
+        font-size: 35px;
+    }
+
+    .main-text {
+        font-size: 17px;
+    }
+
+    .nav-menu {
+        font-size: 20px;
+    }
+
+    .nav-logo {
+        font-size: 30px;
+    }
+
+    .box-wrap {
+        max-width: 600px;
+    }
+
+    .intro-site {
+        /*        2*2로 배치하기 위해 width를 50%로 설정 */
+        width: 50%;
+        border: none;
+    }
+}
+
+/* 모바일 */
+/*화면의 최대 폭이 768px 이하일 때, 적용*/
+@media screen and (max-width : 768px) {
+    .main-title {
+        font-size: 30px;
+    }
+
+    .main-text {
+        font-size: 15px;
+    }
+
+    .nav-menu {
+        font-size: 15px;
+    }
+
+    .nav-logo {
+        font-size: 20px;
+    }
+
+    .intro-site {
+        width: 100%;
+        float: none;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        border-left: none;
+        border-right: none;
+    }
+
+    .intro-site {
+        padding: 40px;
+    }
+}
+
+.item-container {
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+
+.item-container::after {
+    content: '';
+    /*내용은 존재하면 안된다.*/
+    display: block;
+    /*div box의 특성을 추가*/
+    clear: both;
+}
+
+
+
+
+.item-box {
+    float: left;
+    width: 33%;
+    padding: 5px;
+}
+
+.item-box img {
+    width: 100%;
+}
+
+.grey-box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 100%;
+    transition: all 0.3s;
+}
+
+.grey-box p {
+    color: white;
+    text-align: center;
+    padding-top: 17%;
+}
+
+.grey-box:hover {
+    opacity: 1;
+}
+
+.wrap-grey {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* 붕 띄워서 적용해준다.*/
+    overflow: hidden;
+}
+
+.wrap-grey:hover .grey-box {
+    top: 50%;
+}
+
+.text {
+    text-align: center;
+}
+
+/*
+text 클래스의 처음 글자만 스타일링해주는 
+    Pseudo-elements(::) 중 first-letter
+  자주 사용 하는 것 
+1. after : 내부의 맨 뒤에 무언가를 넣어준다. 
+2. before : 내부의 맨 앞에 무언가를 넣어준다. 
+
+    : 하나만 사용해도 무방하지만, 상태를 나타내는 Pseuodo-elements와 구분하기 위해서 ::으로 정의한다.
+    (호환성에도 유리)
+3. pseudo-element를 이용하여 clear:both를 구현할 수 있다. 
+
+*/
+
+.text::first-letter {
+    color: blue;
+    font-size: 100px;
+}
+
+.text::after {
+    content: '사실 아닙니다^^';
+    color: red;
+}
+
+/*
+호환성을 위해 쓰는 prefix
+-webkit- : 옛 버전 크롬 
+-moz- : 옛 버전 파이어폭스
+-ms- : 옛 버전 익스프로러 
+*/
+.test::-webkit-input-placeholder {
+    color: coral;
+    text-align: center;
+}
+
+progress {
+    -webkit-appearance: none;
+}
+
+.test-progress::-webkit-progress-bar {
+    background-color: #eee;
+}
+
+.test-progress::-webkit-progress-value {
+    background-color: deepskyblue;
+}
+
+.ani-test {
+    text-align: center;
+    font-size: 30px;
+}
+
+.ani-test:hover {
+    animation-name: first-test;
+    /*정의한 애니메이션 함수를 적용하는 단계*/
+    animation-duration: 1s;
+    /*정의한 애니메이션 함수의 동작시간(1초동안 움직여라)*/
+}
+
+/*애니메이션을 함수처럼 @keyframes 키워드를 사용하여 정의*/
+@keyframes first-test {
+    0% {
+        transform: translateX(0px);
+        /*        left: 0px; */
+    }
+
+    50% {
+        transform: translateX(-100px);
+        /*        left : -100px; */
+    }
+
+    75% {
+        transform: translateX(100px);
+        /*        left : 100px;*/
+    }
+
+    100% {
+        transform: translateX(0px);
+        /*        left : 0px; */
+    }
+}
+
+
+
+
+
+.sky-btn {
+    padding: 15px;
+    background-color: skyblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.sky-btn:hover {
+    animation-name: moving-btn;
+    animation-duration: 0.5s;
+}
+
+@keyframes moving-btn {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.rotate-btn-wrap button {
+    display: block;
+    margin: auto;
+}
+
+.plus-wrap {
+    margin-top: 40px;
+}
+
+.plus-wrap img {
+    display: block;
+    margin: auto;
+}
+
+.plus-img:hover {
+    animation-name: plus-ani;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes plus-ani {
+    50% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(45deg) scale(2);
+        /*        transform 이후 띄워서 연달아 쓰면 동시 적용 가능하다. */
+    }
+}
+
+.left-nav {
+    position: fixed;
+    z-index: 1;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 30px;
+    transform: translateX(-190px);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.nav-main {
+    text-align: right;
+    transition: all 0.5s;
+}
+
+.nav-sub {
+    padding: 20px;
+    transform: translate(-100px);
+    transition: all 1s;
+}
+
+.left-nav:hover {
+    transform: translate(0px);
+}
+
+.left-nav:hover .nav-main{
+    transform: translateX(-180px);
+}
+
+.left-nav:hover .nav-sub {
+    transform: translateX(50px);
+}

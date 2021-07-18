@@ -1,0 +1,211 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel=stylesheet href="webdoor-font.css">
+    <title>My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <!--    font-awesome 라이브러리 -->
+    <link rel="stylesheet" href="./icon/css/all.css">
+</head>
+
+<body>
+
+    <nav class='left-nav'>
+        <h2 class='nav-main'>Menu</h2>
+        <p class='nav-sub'>Product</p>
+        <p class='nav-sub'>Service</p>
+        <p class='nav-sub'>Log In</p>
+        <p class='nav-sub'>Discount Coupon</p>
+        <p class='nav-sub'>Sign In</p>
+
+    </nav>
+    <!--nav bar-->
+    <div class='nav-wrap'>
+        <div class='nav-logo'>ShoesShop</div>
+        <div style='flex-grow:1'></div>
+        <div class='nav-menu'>Product</div>
+        <div class='nav-menu'>Service</div>
+        <div class='nav-menu'>Log in</div>
+        <div class='nav-menu'>My Page</div>
+    </div>
+
+    <!--이미지 영역-->
+    <div class='main-background'>
+        <div class='main-title-wrap'>
+            ./icon/css/<h3 class='main-title'>Buy Our Perfect Shoes</h3>
+            <p class=main-text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <button class='main-button position'>Buy Now</button>
+    </div>
+    <div class='notice'>
+        <h1>슈즈컴퍼니 온라인샵 단독 상품</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    </div>
+
+
+    <!--아이콘 -->
+    <div class="box-wrap">
+        <div class='intro-site'>
+            <i class="fas fa-shopping-cart fa-4x"></i>
+            <h4>Fast Shopping</h4>
+            <p>Lorem Ipsum is simply</p>
+        </div>
+        <div class='intro-site'>
+            <i class="fas fa-globe-asia fa-4x"></i>
+            <h4>Global</h4>
+            <p>dummy text of the printing and typesetting industry</p>
+        </div>
+        <div class='intro-site'>
+            <i class="fas fa-shoe-prints fa-4x"></i>
+            <h4>Good Quality</h4>
+            <p>Lorem Ipsum has been the industry's standard</p>
+        </div>
+        <div class='intro-site'>
+            <i class="fas fa-american-sign-language-interpreting fa-4x"></i>
+            <h4>Service</h4>
+            <p>dummy text ever since the 1500s</p>
+        </div>
+        <div style='clear: both'></div>
+    </div>
+
+    <!--   pseudo-elements 연습-->
+    <p class='text'>나는 서울대학교 학생입니다. </p>
+
+
+    <!--
+  shadowDOM: Document Object Model, HTML의 비밀 영역
+  - 사실 input태그 자체는 div태그로 이뤄져 있는데, 개발자는 달랑 input태그 하나만 사용해도 되는 이유
+  - 비밀 요소들을 내 입맛대로 커스터마이징 가능하다. 
+   -->
+    <!--
+    <input class='test' type="text" placeholder='my-input'>
+   <progress class='test-progress' value='20' max='100'></progress>
+    
+    
+-->
+
+    <!--아이템 진열 회색박스 천천히(애니메이션 ver1)-->
+    <!--
+        <div style='margin-top: 50px;'></div>
+    <div class="item-container">
+        <div class="item-box">
+            <div style='position : relative'>
+                <div class='grey-box'>
+                    <p>$1000</p>
+                </div>
+                <img src='이미지파일/product1.jpg'>
+            </div>
+        </div>
+        <div class="item-box">
+            <div style='position: relative'>
+                <div class='grey-box'>
+                    <p>$2000</p>
+                </div>
+                <img src='이미지파일/product2.jpg'>
+            </div>
+        </div>
+        <div class="item-box">
+            <div style='position : relative'>
+                <div class='grey-box'>
+                    <p>$3000</p>
+                </div>
+                <img src='이미지파일/product3.jpg'>
+            </div>
+        </div>
+        <div style='clear : both'></div>
+    </div>
+-->
+
+    <!--아이템 진열 아래에서부터 천천히 위로 (애니메이션 ver2)-->
+    <div style='margin-top: 50px;'></div>
+    <div class="item-container">
+        <div class="item-box">
+            <div style='position : relative'>
+                <div class='wrap-grey'>
+                    <div class='grey-box'>
+                        <p>$1000</p>
+                    </div>
+                </div>
+                <img src='이미지파일/product1.jpg'>
+            </div>
+        </div>
+        <div class="item-box">
+            <div style='position: relative'>
+                <div class='wrap-grey'>
+                    <div class='grey-box'>
+                        <p>$1000</p>
+                    </div>
+                </div>
+                <img src='이미지파일/product2.jpg'>
+            </div>
+        </div>
+        <div class="item-box">
+            <div style='position : relative'>
+                <div class='wrap-grey'>
+                    <div class='grey-box'>
+                        <p>$1000</p>
+                    </div>
+                </div>
+                <img src='이미지파일/product3.jpg'>
+            </div>
+        </div>
+        <!--        <div style='clear : both'></div>-->
+    </div>
+
+    <!--  keyframe 애니메이션 연습-->
+    <div class="ani-test">
+        <p>애니메이션 prac 마우스 올려봐</p>
+    </div>
+
+    <!--   1. 좌우로 움찔거리는 버튼 애니메이션-->
+    <div class="rotate-btn-wrap">
+        <button class='sky-btn'>움찔버튼</button>
+    </div>
+    <!--   2. 좌로 움직였다가 x자로 변하는 + 기호 만들기-->
+    <div class="plus-wrap">
+        <img class='plus-img' src='이미지파일/+.png' width='20px' height="20px">
+    </div>
+
+    <!--제출 양식 Form-->
+    <div style='margin-top : 1px'></div>
+    <div class='form-wrap'>
+        <div class='form-inner-wrap'>
+            <h2>Contact Us</h2>
+            <form>
+                <div class=form-width-all>
+                    <p>Your Email</p>
+                    <input class='email-input' type=email placeholder='email@example.com'>
+                </div>
+                <div class=form-width-half>
+                    <p>First Name</p>
+                    <input class='name-input' type='text'>
+                </div>
+                <div class=form-width-half>
+                    <p>Last Name</p>
+                    <input class='name-input' type='text'>
+                </div>
+
+                <div style='clear:both'></div>
+
+                <div class='form-width-all'>
+                    <p>Message</p>
+                    <textarea class='textarea-input' rows='10'></textarea>
+                </div>
+
+                <div class="form-width-all">
+                    <input type='checkbox' id='user-check'>
+                    <label for='user-check'><strong>Subscribe</strong></label>
+                </div>
+
+                <button class='btn'>
+                    SEND
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+</body></html>
