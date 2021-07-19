@@ -9,13 +9,10 @@
 1. 상위 div의 height를 스크롤 할만큼 충분히 설정하는 것이 중요
 2. 스크롤 하면서 고정될 위치를 지정하는 것이 중요(top)
 
-
 position : fixed와의 차이점 
 스크롤 되면서 고정되는 것은 동일하나, 
 fixed는 상위 div에 의존하지 않고 전체 웹사이트에 계속 고정된다. 
 sticky는 상위 div에 의존하며 상위 div가 없어지는 시점까지만 고정된다. 
-
-
 */
 body{
     margin : 0px; 
@@ -24,7 +21,7 @@ div {
     box-sizing: border-box;
 }
 .grey {
-    background-color: darkgray;
+    background-color:coral;
     width : 100%;
     height : 2000px; 
     margin-top : 500px;
