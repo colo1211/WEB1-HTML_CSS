@@ -1,11 +1,61 @@
 
 .grid-container {
-    display : grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
+    display : grid; /*내부의 div들은 모두 grid형태로 진열된다.*/
+/*    격자의 폭/높이를 지정 */
+    grid-template-columns: 200px 200px 200px; /*격자의 열의 폭 & 개수*/
+   /*현재 columns의 개수는 3개고 가로 길이는 100px로 지정, 만약 여기서 100px을 4개 쓴다면 밑에는 그만큼 차감된 개수(2개)가 적용된다.*/
+   /* 1fr :  fraction, 분수 ex) 합쳐서 1이된다. 그럼 1fr은 1/3만큼 차지 */
+    
+    grid-template-rows: 200px 200px 200px;
+    
+/*    grid-gap:10px; grid간에 간격 10px*/
+    
+/*    부모영역에서 배치를 모두 담당*/
+    grid-template-areas: 
+        "area-1 area-1 area-2"
+        "area-1 area-1 area-3"
+        "area-4 area-5 area-6"
 }
 
 .grid-container div{
     border : 1px solid black; 
+}
 
+.grid-1 {
+    grid-area: area-1; 
+}
+
+.grid-2 {
+    grid-area : area-2; 
+}
+
+.grid-3 {
+    grid-area : area-3;
+}
+
+.grid-4 {
+    grid-area : area-4;
+}
+
+.grid-5 {
+    grid-area : area-5;
+}
+
+.grid-6 {
+    grid-area : area-6;
+}
+
+
+@media screen and (max-width : 768px){
+    .grid-container{
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        grid-template-columns: 200px; 
+        grid-template-areas: 
+        "area-1"
+        "area-2"
+        "area-3"
+        "area-4"
+        "area-5"
+        "area-6"
+    }
 }
