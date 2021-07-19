@@ -1,3 +1,13 @@
+/*grid 핵심 개념
+1. display : grid 로 설정
+2. grid를 부모 container에서 모두 격자를 미리 만들어둔다. (grid-template-columns & grid-template-rows 등으로)
+방법 1. 
+grid-template-areas 로 피파 포메이션 짜듯이 배치한다. (아래의 코드는 grid-template-areas로 구현) 
+방법 2. 내부박스 키우기 (영역설정)
+grid-row : 2/4 
+grid-col : 2/4 
+-> 이 박스는 row 2부터 4, col은 2부터 4까지 차지한다. 
+*/
 
 .grid-container {
     display : grid; /*내부의 div들은 모두 grid형태로 진열된다.*/
