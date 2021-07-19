@@ -1,0 +1,130 @@
+body{
+    margin : 0px;
+}
+
+div {
+    box-sizing: border-box;
+}
+.nav-search-wrap {
+    width : 100%;
+    padding : 10px;
+    border-bottom: 2px solid #eee; 
+    text-align: right;
+    color : gray; 
+}
+
+.search-icon-wrap {
+    display: block;
+    float : left;
+    background-color: rgba(0,0,0,0.8);
+    color : white;
+    width : 15%; 
+    height: 100%;
+    text-align: center;
+    cursor : pointer;
+    border-radius: 5px;
+}
+.search-icon-wrap i{
+    padding-top :8px;
+}
+
+.search-input {
+    float : left; 
+    width : 85%;
+}
+
+.dash-box {
+    background-color: white;
+    border : 1px solid #eee;
+    padding : 10px;
+    border-radius: 10px;
+    max-height: 89px;
+}
+
+.left-text {
+    width : 80%;
+    float : left; 
+    
+}
+
+.right-icon {
+    width : 20%; 
+    float : left;
+}
+
+.right-icon i{
+    padding-top:20px;
+    opacity: 0.5;
+    font-size: 30px;
+}
+
+.main-wrap {
+    background-color: #f6f6f6;
+    padding : 20px;
+}
+
+
+
+.my-graph {
+    background-color: white;
+}
+
+
+
+.char-wrap {
+    width : 60%; 
+    float : left; 
+    padding : 10px;
+    border-radius: 10px;
+}
+
+
+.tasks-wrap {
+    width : 40%; 
+    float : left;
+}
+
+
+
+
+
+.tasks-title {
+    font-weight: 600;
+    padding : 10px;
+}
+
+.task-left {
+    width : 70%;
+    float : left; 
+}
+
+.task-right {
+    width : 30%; 
+    float : left; 
+    text-align: center;
+}
+
+.task-right p{
+    text-align: center; 
+    background-color: dodgerblue;
+    width : 30px;
+    border-radius: 1000px;
+    color : white; 
+    margin-left: 40px;
+}
+
+.tasks-text {
+    border : 1px solid #eee;
+    background-color: white;
+    border-collapse: collapse;
+    padding : 10px; 
+}
+
+.nav-icon {
+    color : gray; 
+}
+
+.search {
+    background-color: rgba(0,0,0,0.8);
+    color : white; 
+}
