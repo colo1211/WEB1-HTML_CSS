@@ -128,3 +128,12 @@ div {
     background-color: rgba(0,0,0,0.8);
     color : white; 
 }
+
+.search-bar{
+    width : 300px; 
+    transition: all 0.5s;
+}
+.search-bar:focus {
+    width : 400px;
+}
+

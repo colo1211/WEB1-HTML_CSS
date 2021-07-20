@@ -16,11 +16,12 @@
 
 <body>
 
+
     <!--   상단 navbar part-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav-icon">
         <div class="container-fluid" style='width : 80%;'>
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control search-bar" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success search" type="submit"><i class="fas fa-search"></i></button>
             </form>
         </div>
@@ -49,7 +50,7 @@
         <div class='dash-wrap'>
             <h1 class='mb-3'>Dashboard</h1>
             <div class='row'>
-                <div class="col-3">
+                <div class="col-lg-3">
                     <div class='dash-box' style='border-left: 5px solid skyblue'>
                         <div class='left-text'>
                             <h6>Earnings (Monthly)</h6>
@@ -61,7 +62,7 @@
                         <div style='clear:both'></div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3">
                     <div class='dash-box' style='border-left: 5px solid green'>
                         <div class='left-text'>
                             <h6>Earnings (Annual)</h6>
@@ -73,7 +74,7 @@
                         <div style='clear:both'></div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3">
                     <div class='dash-box' style='border-left: 5px solid purple'>
                         <div class='left-text'>
                             <h6>Tasks</h6>
@@ -85,7 +86,7 @@
                         <div style='clear:both'></div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3">
                     <div class='dash-box' style='border-left: 5px solid yellow'>
                         <div class='left-text'>
                             <h6>Requests</h6>
@@ -104,7 +105,7 @@
             <div class='char-wrap'>
                 <h6>Earnings Overview</h6>
                 <canvas id="myChart">
-                    <script>
+                   <script>
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     //차트타입
