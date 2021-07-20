@@ -11,14 +11,17 @@
     <link rel="stylesheet" href="./admin.css">
     <!--    awesome font-->
     <link rel="stylesheet" href="../icon/css/all.css">
+    <!--    font google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     <title>admin page</title>
 </head>
 
 <body>
 
-
     <!--   상단 navbar part-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-icon">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-icon my-nav">
         <div class="container-fluid" style='width : 80%;'>
             <form class="d-flex">
                 <input class="form-control search-bar" type="search" placeholder="Search" aria-label="Search">
@@ -103,28 +106,10 @@
 
         <div class='second-main-wrap mt-4'>
             <div class='char-wrap'>
-                <h6>Earnings Overview</h6>
-                <canvas id="myChart">
-                   <script>
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    //차트타입
-    type: 'line',
-
-    //데이터
-    data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45]
-        }]
-    },
-    options: {}
-});
-</script>
-                </canvas>
+                <div class='char-inner'>
+                    <h6 style='font-weight: 600'>Earnings Overview</h6>
+                    <img class='graph-main mt-2' src="./그래프.PNG">
+                </div>
             </div>
             <div class='tasks-wrap'>
                 <div class='tasks-title'>Tasks</div>
