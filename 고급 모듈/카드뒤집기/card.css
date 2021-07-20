@@ -1,0 +1,50 @@
+/*
+카드 뒤집기 애니메이션 구현
+1. .flip-outer > .flip-inner > .front(img) & .back(h4)
+2. .flip-outer : 레이아웃 용
+3. .flip-inner : hover 용
+4. .front & .back : 앞면과 뒷면
+
+*/
+
+.inner {
+   width : 100%; 
+    height : 100%;
+    position : relative;
+    transition: all 1s;
+    transform-style: preserve-3d;
+/*    실제 3d box 처럼 보이게끔 설계, hover하지 않았을 때, 뒷면이 안보이게끔 해준다. */
+}
+
+.inner:hover{
+    transform : rotateY(180deg);
+}
+
+.outer {
+    width : 300px;
+    height : 300px;
+    margin : auto;
+}
+
+.front {
+    width : 100%; 
+    height : 100%;
+    position : absolute;
+    backface-visibility: hidden; /*카드의 뒷면에서 이미지(앞면)가 안보이게 처리*/
+}
+
+
+
+.back {
+    width : 100%; 
+    text-align: center;
+    position : absolute;
+    transform: rotateY(180deg); /*글씨를 미리 180도 돌려놓는다.*/
+    height : 100%;
+    background-color: darkorange;
+    border-radius: 50%;
+    padding-top: 35%;
+    box-sizing: border-box;
+}
+
+
