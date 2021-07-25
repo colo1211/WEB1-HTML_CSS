@@ -1,7 +1,10 @@
 /*grid 핵심 개념
+tip : grid 격자를 12 column으로 미리 짜놓음
 1. display : grid 로 설정
 2. grid를 부모 container에서 모두 격자를 미리 만들어둔다. (grid-template-columns & grid-template-rows 등으로)
 방법 1. 
+자식은 grid-template-area
+부모는 grid-template-areas
 grid-template-areas 로 피파 포메이션 짜듯이 배치한다. (아래의 코드는 grid-template-areas로 구현) 
 방법 2. 내부박스 키우기 (영역설정)
 grid-row : 2/4 
@@ -15,9 +18,7 @@ grid-col : 2/4
     grid-template-columns: 200px 200px 200px; /*격자의 열의 폭 & 개수*/
    /*현재 columns의 개수는 3개고 가로 길이는 100px로 지정, 만약 여기서 100px을 4개 쓴다면 밑에는 그만큼 차감된 개수(2개)가 적용된다.*/
    /* 1fr :  fraction, 분수 ex) 합쳐서 1이된다. 그럼 1fr은 1/3만큼 차지 */
-    
-    grid-template-rows: 200px 200px 200px;
-    
+    grid-template-rows : 200px 200px 200px;
 /*    grid-gap:10px; grid간에 간격 10px*/
     
 /*    부모영역에서 배치를 모두 담당*/
@@ -27,9 +28,6 @@ grid-col : 2/4
         "area-4 area-5 area-6"
 }
 
-.grid-container div{
-    border : 1px solid black; 
-}
 
 .grid-1 {
     grid-area: area-1; 
@@ -58,7 +56,6 @@ grid-col : 2/4
 
 @media screen and (max-width : 768px){
     .grid-container{
-        grid-template-rows: 200px 200px 200px 200px 200px 200px;
         grid-template-columns: 200px; 
         grid-template-areas: 
         "area-1"
